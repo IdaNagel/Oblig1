@@ -12,19 +12,19 @@ function kjopBillett(){
     const telefonnr = Number (stelefonnr);
 
     if (isNaN(antall) || antall<1){
-        document.getElementById("feilantall").innerHTML = "Skriv inn antall over 0";
+        document.getElementById("feilantall").innerHTML = "Må skrive noe inn i antall";
     }
     if (isNaN(telefonnr) || telefonnr<1){
-        document.getElementById("feiltelefonnr").innerHTML = "Bruk bare tall til å skrive telefonnummer"
+        document.getElementById("feiltelefonnr").innerHTML = "Må skrive inn tall i telefonnummer"
     }
-    if (fornavn.value.length==0){
-        document.getElementById("feilfornavn").innerHTML = "Skriv inn fornavn";
+    if (fornavn.length==0){
+        document.getElementById("feilfornavn").innerHTML = "Må skrive noe inn i fornavn";
     }
-    if (etternavn.value.length==0){
-        document.getElementById("feiletternavn").innerHTML = "Skriv inn etternavn";
+    if (etternavn.length==0){
+        document.getElementById("feiletternavn").innerHTML = "Må skrive noe inn i etternavn";
     }
-    if (epost.value.length==0){
-        document.getElementById("feilepost").innerHTML = "Skriv inn epost";
+    if (epost.length==0){
+        document.getElementById("feilepost").innerHTML = "Må skrive noe inn i epost";
     }
 
     const billett = {
