@@ -13,18 +13,23 @@ function kjopBillett() {
 
     if (isNaN(antall) || antall < 1) {
         document.getElementById("feilantall").innerHTML = "Må skrive noe inn i antall";
+        document.getElementById("feilantall").style.color="red";
     }
     if (isNaN(telefonnr) || telefonnr < 1) {
         document.getElementById("feiltelefonnr").innerHTML = "Må skrive inn tall i telefonnummer"
+        document.getElementById("feiltelefonnr").style.color="red";
     }
     if (fornavn.length == 0) {
         document.getElementById("feilfornavn").innerHTML = "Må skrive noe inn i fornavn";
+        document.getElementById("feilfornavn").style.color="red";
     }
     if (etternavn.length == 0) {
         document.getElementById("feiletternavn").innerHTML = "Må skrive noe inn i etternavn";
+        document.getElementById("feiletternavn").style.color="red";
     }
     if (epost.length == 0) {
         document.getElementById("feilepost").innerHTML = "Må skrive noe inn i epost";
+        document.getElementById("feilepost").style.color="red";
     }
     else {
         const billett = {
