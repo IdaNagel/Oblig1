@@ -62,5 +62,7 @@ function kjopBillett() {
 }
 
 function slettBilletter(){
+    billetter.splice(0,billetter.length);
+    document.getElementById("allebilletter").innerHTML="";
 
 }
